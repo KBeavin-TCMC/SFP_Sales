@@ -1,12 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
 
 import colors from '../config/colors';
 
-function SellScreen(props) {
+function SellScreen({ navigation}) {
     return (
         <View style={styles.sellContainer}>
-        <Text>Hi</Text>
+            <Button style={styles.sellButton} title="Map" onPress={() => navigation.navigate('Map')}/>
         </View>
     );
 }
